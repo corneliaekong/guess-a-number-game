@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Number Guessing Game</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+  <div class="container main-content">
+      <h2>Welcome!</h2>
+
+    <div class="panel">
+      <h3>I have a list of random numbers<br> between 1-50</h3>
+      <h4>Dare to guess?</h4>
+      <button type="buton"class="btn btn-success" onclick="newGame()">Start</button>
+      <button type="buton"class="btn btn-danger" onclick="settings()">Settings</button>
+      <button type="buton" class="btn btn-primary">Help</button>
+    </div>
+    
+    <div class="panel panel-start">
+      <form action="">
+        <div class="form-group">
+          <label for="number">Guess a Number</label>
+          <p id ="guess"></p>
+          <input type="text" id="guessNumber" class="form-control" autocomplete="off">
+        </div>
+      </form>
+      <button type ="submit" onclick="check()" class="btn btn-info" id="submitBtn">Submit</button>
+      <p id="attempt">Number of previous attempts:<span id="attemptNumber">0</span></p>
+    </div>
+
+    <div class="panel panel3">
+      <p>Your previous guesses</p>
+      <p id="previousGuess"></p>
+    </div>
+  </div>
+  <div class="panel settings">
+    <h3>Settings</h3>
+    <ul>
+      <li>
+      
+        Select Level:&nbsp;&nbsp;&nbsp;
+        <button class="btn-group btn btn-success"onclick="newGame()">Easy</button>
+        <button class="btn btn-danger ">Hard</button>
+        <button class="btn btn-warning ">Extreme</button>
+      </li>
+      <li>Sounds
+        <label class="switch position">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </li>
+      <li>Music
+        <label class="switch position">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </li>
+      <li>Vibration
+        <label class="switch position">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </li>
+      <li>Notifications
+        <label class="switch position">
+          <input type="checkbox">
+          <span class="slider rounded"></span>
+        </label>
+      </li>
+    </ul>
+    <button class="btn btn-default" id="close" onclick="close()" data-dismiss="modal">close</button>
+  </div>
+  <div class="finish">
+    <h3>You lose all your chances! </h3>
+    <button class="btn btn-default" onclick="startNew()">New Game</button>
+  </div>
+
+  <script src="main.js"></script>
+  
+</body>
+</html>

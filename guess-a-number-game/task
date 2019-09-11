@@ -1,0 +1,9 @@
+1 generating a randon number between 1-50.
+2 record the number the player is on and we have to start from one.
+provide the player with a way to gess what the number is
+once a guess has been submitted record it somewhere so that user can see their previuos guesses
+check whether is a correct number
+
+user will have only 10 chances to guess
+after 10 chances user will see a screen or button
+after showing game or button user can't enter any number in input fields
