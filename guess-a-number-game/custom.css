@@ -44,6 +44,10 @@ h2{
   color:black;
   display:none;
 }
+#settingsHeader{
+  text-align:center;
+  margin-bottom:20px;
+}
 .adjustBtn{
   margin:10px;
 }
@@ -132,5 +136,22 @@ input:checked + .slider::before{
   left:25%;
   height: 200px;
   display:none;
+}
+.help{
+  position:absolute;
+  top:25%;
+  left:30%;
+  width:400px;
+  padding:20px 30px;
+  background-color:rgb(175, 178, 179);
+  color:#000;
+  text-align:center;
+  border-radius:4px;
+  box-shadow:1px 2px 1px 1px #000;
+}
+ol .helpList{
+  line-height:2.3rem;
+  margin-bottom:20px;
+
 }
   

@@ -7,3 +7,8 @@ check whether is a correct number
 user will have only 10 chances to guess
 after 10 chances user will see a screen or button
 after showing game or button user can't enter any number in input fields
+
+beautify your code
+change all variables to let and const
+exercise on typeof and isNaN
+solving the close error
